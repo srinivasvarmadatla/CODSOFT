@@ -1,0 +1,380 @@
+::-webkit-scrollbar{
+    display: none;
+    overflow: hidden;
+    z-index: 0;
+}
+hr{
+    margin-top:200px;
+    width:90%;
+    border:none;
+    height:2px;
+    border-top:2px dotted;
+}
+h2{
+    text-align:center;
+    font-size:50px;
+}
+body {
+    margin: 0;
+    background-color: rgb(32, 35, 32);
+    background-size: cover;
+    font-family: "monster";
+    overflow-x:hidden;
+}
+
+@font-face {
+    font-family: monster;
+    src: url("Montserrat-VariableFont_wght.ttf");
+}
+
+.nav-bar {
+    display: flex;
+    height: 100px;
+    font-family: "monster";
+    font-weight: 100;
+    width:100%;
+    background-color: rgba(49,50,50,1);
+    flex-wrap:nowrap;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 10px;
+    height: 140px;
+    width: 140px;
+}
+
+.nav-tools{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar .nav-tools > a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    transition: 0.25s ease-in-out;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.nav-bar .nav-tools > a:hover {
+    color: #8e53b8;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap:nowrap;
+    min-width:300px;
+}
+
+.about {
+    padding-top: 150px;
+    padding-bottom:90px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap: wrap;
+    position:relative;
+    left:200px;
+    flex-wrap:nowrap;
+}
+
+.about .profile-bio {
+    justify-content: center;
+    align-items:start;
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    font-family: 'monster';
+    text-align: left;
+    min-width: 800px;
+    min-height: 400px;
+    border-radius:20px;
+}
+.about .profile-bio>h2{
+    margin: 0px;
+    color:#8e53b8;
+    font-size:50px;
+}
+
+.about .profile-bio>h1{
+    font-size:40px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: nato;
+    src: url("NotoSans-Regular.ttf");
+}
+
+.about .profile-bio>p{
+    margin:0px;
+    font-family:"nato";
+    font-size:15px;
+}
+
+.profile-image > img {
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.55);
+}
+
+.projects{
+    margin-top: 220px;
+    display: flex;
+    padding-top:50px;
+    padding-bottom:100px;
+    width:100%;
+    height:500px;
+    gap:100px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    
+}
+.projects .p1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 250px;
+    height: 400px;
+    background-color: rgba(49,50,50);
+    box-shadow: 1px 1px 1px;
+    text-align: center;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius:20px;
+    min-height:400px;
+    min-width:230px;
+}
+.p1 .overlay-text > p {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 225px;
+    width: 250px;
+    margin: 0;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.p1>.p1-top>img{
+    border-bottom:3px solid #FFE5B4;
+    width: 300px;
+}
+.p1:hover .overlay-text > p {
+    opacity: 1;
+}
+.p1>.p1-bottom>p{
+    margin:5px;
+    font-family:"monster";
+    color:white;
+    text-align:left; 
+}
+.p1>.p1-bottom>p>a{
+    text-decoration:none;
+    color:#8e53b8;
+    font-family:"monster";
+}
+.p1:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.projects .p2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px;
+    width: 250px;
+    height: 400px;
+    background-color: rgba(49,50,50);
+    box-shadow: 2px 2px 3px;
+    text-align: center;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius:20px;
+    min-height:400px;
+    min-width:230px;
+}
+.p2 .overlay-text > p {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 225px;
+    width: 250px;
+    margin: 0;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.p2>.p2-top>img{
+    border-bottom:3px solid #FFE5B4;
+    height:225px;
+    width: 300px;
+}
+.p2:hover .overlay-text > p {
+    opacity: 1;
+}
+.p2>.p2-bottom>p{
+    margin:5px;
+    font-family:"monster";
+    color:white;
+    text-align:left; 
+}
+.p2>.p2-bottom>p>a{
+    text-decoration:none;
+    color:#8e53b8;
+    font-family:"monster";
+}
+.p2:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.projects .p3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px;
+    width: 250px;
+    height: 400px;
+    background-color: rgba(49,50,50);
+    box-shadow: 2px 2px 3px;
+    text-align: center;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius:20px;
+    min-width:230px;
+    min-height:400px;
+}
+.p3 .overlay-text > p {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 225px;
+    width: 250px;
+    margin: 0;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.p3>.p3-top>img{
+    border-bottom:3px solid #FFE5B4;
+    height:225px;
+    width: 300px;
+}
+.p3:hover .overlay-text > p {
+    opacity: 1;
+}
+.p3>.p3-bottom>p{
+    margin:5px;
+    font-family:"monster";
+    color:white;
+    text-align:left; 
+}
+.p3>.p3-bottom>p>a{
+    text-decoration:none;
+    color:#8e53b8;
+    font-family:"monster";
+}
+.p3:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.footer {
+    background-color:rgba(49,50,50,0.2);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    font-family:"monster";
+    z-index:1;
+    
+}
+.footer>.footer-top{
+    display:flex;
+    gap:10px;
+}
+
+.footer>.footer-top>a>img{
+    background-color:#8e53b8;
+    border-radius:100px;
+    transition:0.3s ease-in-out;
+}
+
+.footer>.footer-top>a>img:hover{
+    padding-top:10px;
+}
+.footer>.footer-bottom{
+    color:white;
+}
+.skill {
+    color:white;
+    max-width: 600px;
+    margin-left: 450px;
+    margin-top:200px;
+  }
+  
+  .skill-item {
+    margin-bottom: 15px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    background-color: #8e53b8;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+.skill {
+    color: white;
+    max-width: 600px;
+    margin-left: 450px;
+    margin-top: 200px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+.animated {
+    opacity: 1;
+}
+.animated2{
+    opacity: 0;
+}
+  
+

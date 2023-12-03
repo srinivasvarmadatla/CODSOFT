@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>srinivas.D</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <img src="S.png" alt="logo">
+        </div>
+        <div class="nav-tools">
+            <a href="#About">About</a>
+            <a href="#projects">Projects</a>
+            <a href="Srinivas _resume.pdf" download>Hire me</a>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="about" id="About">
+            <div class="profile-image">
+                <img src="profile-pic.jpg" alt="My profile_pic" height="300px" width="300px">
+            </div>
+            <div class="profile-bio">
+                <h1>Hello I'm</h1>
+                <h2>Developer</h2>
+                <p>My name is srinivas! i'm a web developer and student at<br>vignan's institute of information technology.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <div class="skill" id="skills">
+        <h2>Skills</h2>
+        <div class="skill-item">
+            <p>Python</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;">5/5</div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <p>Front-end web</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">4/5</div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <p>Back-end web</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;">3/5</div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <p>C</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;">3/5</div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <p>Java</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;">3/5</div>
+            </div>
+        </div>
+      </div>
+
+    <section class="projects" id="projects">
+        <div class="p1">
+            <div class="overlay-text">
+                <p>STOCK<br>PREDICTOR</p>
+            </div>
+            <div class="p1-top">
+                <img src="p1-image.jpg" alt="project-image">
+            </div>
+            <div class="p1-bottom">
+                <p>This is a basic project which a tesla stock predictor using basic LinearRegression ML model
+                . To view the project click on <a href="https://github.com/srinivasvarmadatla/TSLA_predictor-basic-">GitHub_link.</a></p>
+            </div>
+        </div>
+        <div class="p2">
+            <div class="overlay-text">
+                <p>LIBRARY MANAGMENT SYATEM</p>
+            </div>
+            <div class="p2-top">
+                <img src="p2-image.jpg" alt="project-image">
+            </div>
+            <div class="p2-bottom">
+                <p>This is a LIBRARY MANAGMENT SYATEM which is both software and hardware based. Main aime is to automate the librarian <a href="https://github.com/srinivasvarmadatla/LMS">GitHub_link.</a></p>
+            </div>
+        </div>
+        <div class="p3">
+            <div class="overlay-text">
+                <p>Login Page</p>
+            </div>
+            <div class="p3-top">
+                <img src="p3-image.png" alt="project-image">
+            </div>
+            <div class="p3-bottom">
+                <p>This project is a basic login page designed using HTML and CSS<a href="https://github.com/srinivasvarmadatla/Login_page"> GitHub_link.</a></p>
+                <p><a href="https://srinivasvarmadatla.github.io/Login_page/">prototype-link.</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer" id="Contact">
+        <div class="footer-top">
+            <a href="https://www.instagram.com/srinivas_varma_datla"><img src="insta1.png" alt="insta" height="30px" width="30px" id="insta"></a>
+            <a href="https://www.linkedin.com/in/srinivas-varma-4755b2275/"><img src="linkedin1.png" alt="linkedin" height="30px" width="30px" id="link"></a>
+            <a href="https://twitter.com/srinivas_40609"><img src="twitter.png" alt="twitter" height="30px" width="30px" id="twit"></a>
+            <a href="mailto:datlasrinivasvarma@gmail.com"><img src="gmail.png" alt="mail" height="30px" width="30px" id="mail"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2023 srinivas</p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const skillSection = document.querySelector(".skill");
+    const skillPosition = skillSection.offsetTop - window.innerHeight;
+    const windowHeight = window.innerHeight;
+
+    function checkScroll() {
+        if (window.scrollY > skillPosition && window.scrollY < skillPosition + windowHeight) {
+            skillSection.classList.add("animated");
+        } else {
+            skillSection.classList.remove("animated");
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+});
+
+    </script>
+</body>
+</html>
